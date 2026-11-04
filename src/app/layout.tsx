@@ -20,6 +20,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cancer-care-foundation.vercel.app"),
   title: {
     template: "%s | Cancer Care & Cure Foundation",
     default: "Cancer Care & Cure Foundation | Together, We Give Hope. Together, We Save Lives.",
