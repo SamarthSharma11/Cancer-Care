@@ -41,23 +41,23 @@ export default function HomePage() {
             </p>
 
             {/* Hero CTAs */}
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <Link
                 href="/patient-assistance"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#004F8C] rounded hover:bg-[#0A2F52] shadow-sm transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#004F8C] rounded hover:bg-[#0A2F52] shadow-sm transition-colors text-center"
               >
                 <span>Seek Patient Assistance</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/donate"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-[#004F8C] bg-white border border-[#004F8C] rounded hover:bg-[#E8F1F7] transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-[#004F8C] bg-white border border-[#004F8C] rounded hover:bg-[#E8F1F7] transition-colors text-center"
               >
                 <span>Support Our Mission</span>
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-1.5 px-4 py-3 text-sm font-semibold text-[#4F5B66] hover:text-[#004F8C] transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center sm:justify-start gap-1.5 px-4 py-2.5 text-sm font-semibold text-[#4F5B66] hover:text-[#004F8C] transition-colors text-center"
               >
                 <span>Read Founder's Story</span>
               </Link>

@@ -49,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sourceSerif.variable} ${sourceSans.variable}`}>
-      <body className="min-h-screen flex flex-col bg-white text-[#1E2A33] font-sans antialiased selection:bg-[#E8F1F7] selection:text-[#004F8C]">
+    <html lang="en" className={`${sourceSerif.variable} ${sourceSans.variable} overflow-x-hidden`}>
+      <body className="min-h-screen flex flex-col bg-white text-[#1E2A33] font-sans antialiased selection:bg-[#E8F1F7] selection:text-[#004F8C] overflow-x-hidden">
         {/* Skip to main content for accessibility */}
         <a
           href="#main-content"

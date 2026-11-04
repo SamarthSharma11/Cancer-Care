@@ -16,7 +16,7 @@ export default function WhatsAppButton({
   )}`;
 
   return (
-    <aside aria-label="Quick contact" className="fixed bottom-6 right-6 z-30">
+    <aside aria-label="Quick contact" className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-30">
       <a
         href={whatsappUrl}
         target="_blank"

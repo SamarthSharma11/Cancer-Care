@@ -41,45 +41,45 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-white border-b border-[#D5DDE3] shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
       {/* Brand & Action Bar */}
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between py-3 sm:py-4">
+        <div className="flex items-center justify-between py-2.5 sm:py-3 md:py-4">
           {/* Brand Logo & Name */}
           <Link
             href="/"
-            className="flex items-center gap-3 sm:gap-5 py-1 text-decoration-none group flex-1 min-w-0 mr-4 lg:mr-8"
+            className="flex items-center gap-2.5 sm:gap-4 md:gap-5 py-1 text-decoration-none group flex-1 min-w-0 mr-2 sm:mr-4 lg:mr-8"
             aria-label="Cancer Care & Cure Foundation Home"
           >
-            <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22 flex-shrink-0 bg-white rounded-lg border border-[#D5DDE3] p-1.5 flex items-center justify-center overflow-hidden shadow-sm">
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex-shrink-0 bg-white rounded-lg border border-[#D5DDE3] p-1 sm:p-1.5 flex items-center justify-center overflow-hidden shadow-xs">
               <Image
                 src="/images/logo.png"
                 alt="Cancer Care & Cure Foundation Logo"
-                width={88}
-                height={88}
+                width={80}
+                height={80}
                 priority
                 className="object-contain w-full h-full"
               />
             </div>
             <div className="flex flex-col flex-1 min-w-0 justify-center">
-              <span className="font-serif font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-[#004F8C] leading-none group-hover:text-[#0A2F52] transition-colors tracking-wide whitespace-nowrap">
+              <span className="font-serif font-bold text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-[36px] text-[#004F8C] leading-snug md:leading-none group-hover:text-[#0A2F52] transition-colors md:tracking-wide break-words md:whitespace-nowrap">
                 Cancer Care & Cure Foundation
               </span>
-              <span className="hidden sm:block text-xs sm:text-sm lg:text-[15px] text-[#14788B] font-medium tracking-wide mt-1.5">
+              <span className="hidden sm:block text-xs md:text-sm lg:text-[14px] text-[#14788B] font-medium tracking-wide mt-0.5 md:mt-1.5 truncate">
                 Together, We Give Hope. Together, We Save Lives.
               </span>
             </div>
           </Link>
 
           {/* Action Buttons (Desktop / Tablet) */}
-          <div className="hidden md:flex items-center gap-3 flex-shrink-0">
+          <div className="hidden md:flex items-center gap-2.5 lg:gap-3 flex-shrink-0">
             <Link
               href="/patient-assistance"
-              className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-semibold text-[#14788B] bg-[#E8F1F7] border border-[#14788B]/30 rounded hover:bg-[#14788B] hover:text-white transition-colors"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs sm:text-sm font-semibold text-[#14788B] bg-[#E8F1F7] border border-[#14788B]/30 rounded hover:bg-[#14788B] hover:text-white transition-colors whitespace-nowrap"
             >
               <HeartHandshake className="w-4 h-4" />
               <span>Get Patient Help</span>
             </Link>
             <Link
               href="/donate"
-              className="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-[#004F8C] rounded hover:bg-[#0A2F52] shadow-sm transition-colors"
+              className="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-[#004F8C] rounded hover:bg-[#0A2F52] shadow-sm transition-colors whitespace-nowrap"
             >
               Donate Now
             </Link>
@@ -89,14 +89,14 @@ export default function Header() {
           <div className="flex md:hidden items-center gap-2 flex-shrink-0">
             <Link
               href="/donate"
-              className="px-3 py-1.5 text-xs font-semibold text-white bg-[#004F8C] rounded"
+              className="px-3 py-1.5 text-xs font-semibold text-white bg-[#004F8C] rounded shadow-xs"
             >
               Donate
             </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#1E2A33] hover:text-[#004F8C] rounded focus:outline-none focus:ring-2 focus:ring-[#004F8C]"
+              className="p-1.5 text-[#1E2A33] hover:text-[#004F8C] rounded focus:outline-none focus:ring-2 focus:ring-[#004F8C]"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
             >
@@ -135,7 +135,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 z-50 bg-white border-t border-[#D5DDE3] h-[calc(100vh-100%)] min-h-[calc(100dvh-100%)] overflow-y-auto px-6 py-6 flex flex-col justify-between shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="md:hidden fixed inset-x-0 bottom-0 top-[65px] sm:top-[76px] z-50 bg-white border-t border-[#D5DDE3] overflow-y-auto px-5 py-6 flex flex-col justify-between shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200">
           <div className="flex flex-col gap-2">
             <p className="text-xs uppercase font-semibold text-[#4F5B66] tracking-wider mb-2">
               Menu Navigation

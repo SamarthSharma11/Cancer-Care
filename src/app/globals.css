@@ -45,20 +45,38 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #FFFFFF;
   color: var(--ink);
   font-family: var(--font-sans);
-  font-size: 1.0625rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
 }
 
 p {
-  text-align: justify;
-  text-justify: inter-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  text-align-last: left;
+}
+
+@media (min-width: 640px) {
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
