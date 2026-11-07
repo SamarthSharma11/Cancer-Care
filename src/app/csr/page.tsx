@@ -56,24 +56,15 @@ export default function CSRPage() {
               </p>
             </div>
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl aspect-[16/10] bg-white group">
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white">
                 <Image
                   src="/images/csr-partnership.jpg"
                   alt="Corporate CSR Partnerships for Cancer Care"
                   fill
                   priority
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 480px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F52]/80 via-transparent to-transparent" />
-                <div className="absolute bottom-3.5 left-4 right-4 text-white">
-                  <span className="text-[11px] uppercase tracking-wider font-bold text-[#E8F1F7] block mb-0.5">
-                    Impact & Integrity
-                  </span>
-                  <p className="font-serif text-sm sm:text-base font-bold leading-snug">
-                    Schedule VII Healthcare & Preventive Oncology Partnerships
-                  </p>
-                </div>
               </div>
             </div>
           </div>

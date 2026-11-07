@@ -67,25 +67,16 @@ export default function HomePage() {
             </div>
 
             {/* Hero Image Showcase */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white aspect-[4/3] group">
+            <div className="lg:col-span-5 w-full flex items-center justify-center">
+              <div className="relative w-full aspect-[16/10] sm:aspect-[4/3] lg:aspect-auto lg:h-[480px] rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white">
                 <Image
                   src="/images/home-care.jpg"
                   alt="Cancer Care & Cure Foundation - Compassionate Care and Patient Support"
                   fill
                   priority
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 100vw, 480px"
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 520px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F52]/80 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-5 right-5 text-white">
-                  <span className="text-xs uppercase tracking-wider font-bold text-[#E8F1F7] block mb-1">
-                    Care, Dignity & Hope
-                  </span>
-                  <p className="font-serif text-base sm:text-lg font-bold leading-snug">
-                    Standing beside cancer patients and families every step of the journey
-                  </p>
-                </div>
               </div>
             </div>
           </div>
