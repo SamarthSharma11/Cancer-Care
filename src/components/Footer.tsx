@@ -13,17 +13,17 @@ export default function Footer() {
           {/* Column 1: Organization & Identity */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white rounded p-1 flex items-center justify-center flex-shrink-0">
+              <div className="w-14 h-14 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 shadow-xs">
                 <Image
                   src="/images/logo.png"
                   alt="Cancer Care & Cure Foundation"
-                  width={36}
-                  height={36}
+                  width={56}
+                  height={56}
                   className="object-contain"
                 />
               </div>
               <div>
-                <h3 className="font-serif font-bold text-white text-base leading-tight">
+                <h3 className="font-serif font-bold text-white text-lg leading-tight">
                   Cancer Care & Cure
                 </h3>
                 <p className="text-xs text-[#C5D8E6] uppercase tracking-wider font-medium">
@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="pt-2">
               <span className="inline-flex items-center gap-1.5 text-xs text-[#C5D8E6] bg-[#004F8C]/40 px-2.5 py-1 rounded border border-[#004F8C]">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#14788B]" />
-                Registered Non-Profit Organisation
+                Non-Profit Healthcare Initiative
               </span>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#14788B] flex-shrink-0 mt-1" />
                 <address className="not-italic text-xs leading-relaxed">
-                  Registered Office Address:<br />
+                  Office Address:<br />
                   96 A, Pocket-C, Mayur Vihar, Phase-2,<br />
                   Delhi-110091, India
                 </address>

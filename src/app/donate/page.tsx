@@ -44,68 +44,68 @@ export default function DonatePage() {
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#004F8C] mb-3">
               Ways to Support Our Mission
             </h2>
-            <p className="text-sm text-[#4F5B66]">
+            <p className="text-base text-[#4F5B66]">
               Every contribution directly expands our ability to stand beside patients in their most difficult hours.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="border border-[#D5DDE3] rounded-lg p-6 bg-[#F7F9FA] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#004F8C] flex items-center justify-center">
+            <div className="border border-[#BAC9D6] rounded-xl p-6 sm:p-7 bg-[#EAEFF5] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#004F8C] flex items-center justify-center shadow-2xs">
                 <Heart className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">
                 Individual Contributions
               </h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Direct financial contributions once the foundation is legally authorised and able to receive them through official banking channels.
               </p>
             </div>
 
-            <div className="border border-[#D5DDE3] rounded-lg p-6 bg-[#F7F9FA] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#14788B] flex items-center justify-center">
+            <div className="border border-[#BAC9D6] rounded-xl p-6 sm:p-7 bg-[#EAEFF5] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#14788B] flex items-center justify-center shadow-2xs">
                 <ShieldCheck className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">
                 Corporate Partnerships
               </h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 CSR grants and corporate partnerships, subject to applicable eligibility, Section 135 compliance, and institutional agreements.
               </p>
             </div>
 
-            <div className="border border-[#D5DDE3] rounded-lg p-6 bg-[#F7F9FA] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#2F7A1B] flex items-center justify-center">
+            <div className="border border-[#BAC9D6] rounded-xl p-6 sm:p-7 bg-[#EAEFF5] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#2F7A1B] flex items-center justify-center shadow-2xs">
                 <Lock className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">
                 Employee Giving Campaigns
               </h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Workplace payroll giving, matched funding drives, and awareness campaigns organized by concerned corporate teams.
               </p>
             </div>
 
-            <div className="border border-[#D5DDE3] rounded-lg p-6 bg-[#F7F9FA] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#0A2F52] flex items-center justify-center">
+            <div className="border border-[#BAC9D6] rounded-xl p-6 sm:p-7 bg-[#EAEFF5] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#0A2F52] flex items-center justify-center shadow-2xs">
                 <CheckCircle2 className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">
                 In-Kind Assistance
               </h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Donations of medical supplies, nutritional supplements, or professional services after prior review and formal approval.
               </p>
             </div>
 
-            <div className="border border-[#D5DDE3] rounded-lg p-6 bg-[#F7F9FA] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#004F8C] flex items-center justify-center">
+            <div className="border border-[#BAC9D6] rounded-xl p-6 sm:p-7 bg-[#EAEFF5] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#004F8C] flex items-center justify-center shadow-2xs">
                 <Heart className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">
                 Volunteer Support
               </h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Contributing your time, expertise, language skills, or outreach energy to expand patient support in your locality.
               </p>
             </div>

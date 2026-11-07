@@ -47,7 +47,7 @@ export default function PrivacyPage() {
             <ul className="list-disc list-inside space-y-1.5 text-[#4F5B66]">
               <li>To evaluate and respond to your enquiries, patient assistance questions, or CSR partnership proposals.</li>
               <li>To coordinate volunteer applications and assign outreach or administrative activities.</li>
-              <li>To fulfill statutory, audit, and regulatory requirements applicable to registered Indian charitable organizations.</li>
+              <li>To fulfill statutory, audit, and regulatory requirements applicable to Indian charitable organizations.</li>
               <li>To maintain internal audit logs and prevent abusive automated bot spam.</li>
             </ul>
           </section>
@@ -86,10 +86,10 @@ export default function PrivacyPage() {
             <p>
               For any privacy inquiries or to exercise your statutory rights, please write directly to our Data Protection point of contact at:
             </p>
-            <div className="p-4 bg-[#F7F9FA] border border-[#D5DDE3] rounded-lg text-xs space-y-1">
+            <div className="p-4 bg-[#EBF1F6] border border-[#BAC9D6] rounded-lg text-xs space-y-1 shadow-2xs">
               <p className="font-semibold text-[#1E2A33]">Cancer Care & Cure Foundation</p>
               <p>Email: <a href="mailto:cccf.cancer@gmail.com" className="text-[#004F8C] underline">cccf.cancer@gmail.com</a></p>
-              <p>Registered Office: 96 A, Pocket-C, Mayur Vihar, Phase-2, Delhi-110091, India</p>
+              <p>Office Address: 96 A, Pocket-C, Mayur Vihar, Phase-2, Delhi-110091, India</p>
             </div>
           </section>
         </div>

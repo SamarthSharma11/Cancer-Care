@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: "Cancer Care & Cure Foundation | Together, We Give Hope. Together, We Save Lives.",
   },
   description:
-    "Cancer Care & Cure Foundation is a registered non-profit organization dedicated to helping financially disadvantaged cancer patients access timely financial aid, nutrition, and compassionate guidance.",
+    "Cancer Care & Cure Foundation is a non-profit organization dedicated to helping financially disadvantaged cancer patients access timely financial aid, nutrition, and compassionate guidance.",
   keywords: [
     "Cancer NGO Delhi",
     "Cancer patient assistance India",

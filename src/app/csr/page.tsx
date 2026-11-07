@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Building2,
   FileCheck2,
@@ -39,19 +40,42 @@ export default function CSRPage() {
         </div>
       </section>
 
-      {/* Main Intro */}
+      {/* Main Intro with Image */}
       <section className="py-14 sm:py-18 bg-white border-b border-[#D5DDE3]">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <div className="max-w-[800px] space-y-4">
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A2F52]">
-              Partner With Us to Create Meaningful Support
-            </h2>
-            <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed text-justify">
-              We invite companies, corporate CSR teams, philanthropic foundations, and employee groups to explore structured, ethical ways of improving cancer outcomes for disadvantaged communities.
-            </p>
-            <p className="text-base sm:text-[17px] text-[#4F5B66] leading-relaxed text-justify">
-              Cancer creates catastrophic expenditure for low-income households. Through collaborative CSR funding, corporations can make direct, measurable contributions toward lifesaving treatment interventions, diagnostic access, nutritional stability, and preventive health literacy.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A2F52]">
+                Partner With Us to Create Meaningful Support
+              </h2>
+              <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed text-justify">
+                We invite companies, corporate CSR teams, philanthropic foundations, and employee groups to explore structured, ethical ways of improving cancer outcomes for disadvantaged communities.
+              </p>
+              <p className="text-base sm:text-[17px] text-[#4F5B66] leading-relaxed text-justify">
+                Cancer creates catastrophic expenditure for low-income households. Through collaborative CSR funding, corporations can make direct, measurable contributions toward lifesaving treatment interventions, diagnostic access, nutritional stability, and preventive health literacy.
+              </p>
+            </div>
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl aspect-[16/10] bg-white group">
+                <Image
+                  src="/images/csr-partnership.jpg"
+                  alt="Corporate CSR Partnerships for Cancer Care"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 480px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F52]/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3.5 left-4 right-4 text-white">
+                  <span className="text-[11px] uppercase tracking-wider font-bold text-[#E8F1F7] block mb-0.5">
+                    Impact & Integrity
+                  </span>
+                  <p className="font-serif text-sm sm:text-base font-bold leading-snug">
+                    Schedule VII Healthcare & Preventive Oncology Partnerships
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -63,68 +87,68 @@ export default function CSRPage() {
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#004F8C] mb-3">
               Potential Areas of Collaboration
             </h2>
-            <p className="text-sm text-[#4F5B66]">
+            <p className="text-base text-[#4F5B66]">
               Co-create programmes aligned with Schedule VII of the Companies Act, 2013 (Healthcare, Preventive Oncology, and Poverty Alleviation).
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#004F8C] flex items-center justify-center">
+            <div className="bg-[#EAEFF5] p-6 sm:p-7 rounded-xl border border-[#BAC9D6] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#004F8C] flex items-center justify-center shadow-2xs">
                 <HeartHandshake className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Patient Assistance Funds</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Patient Assistance Funds</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Dedicated patient assistance funds, subject to applicable law, transparent medical verification, and approved programme criteria.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#14788B] flex items-center justify-center">
+            <div className="bg-[#EAEFF5] p-6 sm:p-7 rounded-xl border border-[#BAC9D6] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#14788B] flex items-center justify-center shadow-2xs">
                 <FileText className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Cancer Awareness & Education</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Cancer Awareness & Education</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Corporate health literacy sessions, public screening awareness drives, and symptom education for underserved employee or community clusters.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#2F7A1B] flex items-center justify-center">
+            <div className="bg-[#EAEFF5] p-6 sm:p-7 rounded-xl border border-[#BAC9D6] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#2F7A1B] flex items-center justify-center shadow-2xs">
                 <Building2 className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Patient Navigation Desks</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Patient Navigation Desks</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Supporting navigation services that help underprivileged families understand diagnostic reports and access government welfare schemes.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#0A2F52] flex items-center justify-center">
+            <div className="bg-[#EAEFF5] p-6 sm:p-7 rounded-xl border border-[#BAC9D6] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#0A2F52] flex items-center justify-center shadow-2xs">
                 <Users2 className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Caregiver Support Initiatives</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Caregiver Support Initiatives</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Programmes to counsel, equip, and relieve family members caring for patients through long chemo/radiotherapy regimens.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#004F8C] flex items-center justify-center">
+            <div className="bg-[#EAEFF5] p-6 sm:p-7 rounded-xl border border-[#BAC9D6] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#004F8C] flex items-center justify-center shadow-2xs">
                 <ShieldCheck className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Employee Volunteering & Matching</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Employee Volunteering & Matching</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Employee payroll giving, volunteer days, matched corporate giving, and internal cancer awareness talks.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3] space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#E8F1F7] text-[#14788B] flex items-center justify-center">
+            <div className="bg-[#EAEFF5] p-6 sm:p-7 rounded-xl border border-[#BAC9D6] space-y-3 shadow-xs hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-white border border-[#BAC9D6] text-[#14788B] flex items-center justify-center shadow-2xs">
                 <FileCheck2 className="w-5 h-5" />
               </div>
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">In-Kind & Professional Services</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">In-Kind & Professional Services</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 In-kind healthcare supplies, diagnostic equipment support, or professional advisory aligned with programme requirements.
               </p>
             </div>

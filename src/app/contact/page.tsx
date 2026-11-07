@@ -11,7 +11,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Cancer Care & Cure Foundation. Reach our Delhi registered office by email, telephone, or online enquiry form.",
+    "Contact Cancer Care & Cure Foundation. Reach our Delhi office by email, telephone, or online enquiry form.",
 };
 
 export default function ContactPage() {
@@ -50,7 +50,7 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-4">
-                <div className="p-4 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-1">
+                <div className="p-4 border border-[#BAC9D6] rounded-lg bg-[#EBF1F6] space-y-1 shadow-2xs">
                   <div className="flex items-center gap-2 text-[#004F8C] font-semibold text-xs uppercase tracking-wider">
                     <Mail className="w-4 h-4" />
                     <span>Email Enquiries</span>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="p-4 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-1">
+                <div className="p-4 border border-[#BAC9D6] rounded-lg bg-[#EBF1F6] space-y-1 shadow-2xs">
                   <div className="flex items-center gap-2 text-[#004F8C] font-semibold text-xs uppercase tracking-wider">
                     <Phone className="w-4 h-4" />
                     <span>Helpline & Phone</span>
@@ -80,10 +80,10 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="p-4 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-1">
+                <div className="p-4 border border-[#BAC9D6] rounded-lg bg-[#EBF1F6] space-y-1 shadow-2xs">
                   <div className="flex items-center gap-2 text-[#004F8C] font-semibold text-xs uppercase tracking-wider">
                     <MapPin className="w-4 h-4" />
-                    <span>Registered Office Address</span>
+                    <span>Office Address</span>
                   </div>
                   <address className="not-italic text-sm text-[#1E2A33] leading-relaxed">
                     Cancer Care & Cure Foundation<br />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   Users,
   Megaphone,
@@ -42,6 +43,27 @@ export default function VolunteerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left Column: Volunteer Areas & Guardrails */}
             <div className="lg:col-span-5 space-y-8">
+              {/* Volunteer Hero Image */}
+              <div className="relative rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-lg aspect-[16/10] bg-white group">
+                <Image
+                  src="/images/volunteer.jpg"
+                  alt="Volunteers supporting Cancer Care & Cure Foundation"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 480px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F52]/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3.5 left-4 right-4 text-white">
+                  <span className="text-[11px] uppercase tracking-wider font-bold text-[#E8F1F7] block mb-0.5">
+                    Community & Compassion
+                  </span>
+                  <p className="font-serif text-sm sm:text-base font-bold leading-snug">
+                    Dedicated volunteers bringing smiles, hope, and relief to patients
+                  </p>
+                </div>
+              </div>
+
               <div>
                 <h2 className="font-serif text-2xl font-bold text-[#0A2F52] mb-3">
                   Ways You Can Help
@@ -52,49 +74,49 @@ export default function VolunteerPage() {
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-3 p-3.5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA]">
+                <div className="flex items-start gap-3.5 p-4 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] shadow-xs hover:shadow-md transition-shadow">
                   <Megaphone className="w-5 h-5 text-[#004F8C] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#1E2A33]">
+                    <h3 className="font-serif font-bold text-base text-[#1E2A33]">
                       Awareness & Community Outreach
                     </h3>
-                    <p className="text-xs text-[#4F5B66] leading-relaxed">
+                    <p className="text-sm text-[#4F5B66] leading-relaxed">
                       Assisting at educational kiosks, screening camps, and community talks in neighborhoods and colleges.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3.5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA]">
+                <div className="flex items-start gap-3.5 p-4 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] shadow-xs hover:shadow-md transition-shadow">
                   <PenTool className="w-5 h-5 text-[#14788B] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#1E2A33]">
+                    <h3 className="font-serif font-bold text-base text-[#1E2A33]">
                       Writing, Translation & Design
                     </h3>
-                    <p className="text-xs text-[#4F5B66] leading-relaxed">
+                    <p className="text-sm text-[#4F5B66] leading-relaxed">
                       Helping translate informational leaflets into Hindi/regional languages, creating digital infographics, or writing patient resources.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3.5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA]">
+                <div className="flex items-start gap-3.5 p-4 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] shadow-xs hover:shadow-md transition-shadow">
                   <ClipboardList className="w-5 h-5 text-[#2F7A1B] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#1E2A33]">
+                    <h3 className="font-serif font-bold text-base text-[#1E2A33]">
                       Administrative & Research Coordination
                     </h3>
-                    <p className="text-xs text-[#4F5B66] leading-relaxed">
+                    <p className="text-sm text-[#4F5B66] leading-relaxed">
                       Helping maintain directory listings of hospital welfare desks, government schemes, and NGO aid registries.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3.5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA]">
+                <div className="flex items-start gap-3.5 p-4 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] shadow-xs hover:shadow-md transition-shadow">
                   <HeartHandshake className="w-5 h-5 text-[#0A2F52] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-serif font-bold text-sm text-[#1E2A33]">
+                    <h3 className="font-serif font-bold text-base text-[#1E2A33]">
                       Fundraising & Donor Engagement
                     </h3>
-                    <p className="text-xs text-[#4F5B66] leading-relaxed">
+                    <p className="text-sm text-[#4F5B66] leading-relaxed">
                       Coordinating community giving drives, corporate CSR presentations, and charity engagement initiatives.
                     </p>
                   </div>

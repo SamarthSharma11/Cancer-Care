@@ -157,56 +157,56 @@ export default function AboutPage() {
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#004F8C] mb-3">
               Our Key Objectives
             </h2>
-            <p className="text-sm text-[#4F5B66]">
+            <p className="text-base text-[#4F5B66]">
               Clear, practical goals governing our operations and programme delivery.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-2">
-              <CheckCircle2 className="w-5 h-5 text-[#2F7A1B]" />
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Treatment Aid</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+            <div className="p-6 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] space-y-2.5 shadow-xs hover:shadow-md transition-shadow">
+              <CheckCircle2 className="w-6 h-6 text-[#2F7A1B]" />
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Treatment Aid</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Work towards financial assistance for eligible cancer-treatment expenses, subject to available funds and programme rules.
               </p>
             </div>
 
-            <div className="p-5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-2">
-              <CheckCircle2 className="w-5 h-5 text-[#2F7A1B]" />
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Information Access</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+            <div className="p-6 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] space-y-2.5 shadow-xs hover:shadow-md transition-shadow">
+              <CheckCircle2 className="w-6 h-6 text-[#2F7A1B]" />
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Information Access</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Support access to verified information about cancer surgery, chemotherapy, radiation therapy, prescribed medicines, and diagnostics.
               </p>
             </div>
 
-            <div className="p-5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-2">
-              <CheckCircle2 className="w-5 h-5 text-[#2F7A1B]" />
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Institutional Collaboration</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+            <div className="p-6 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] space-y-2.5 shadow-xs hover:shadow-md transition-shadow">
+              <CheckCircle2 className="w-6 h-6 text-[#2F7A1B]" />
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Institutional Collaboration</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Collaborate with credible hospitals, cancer centres, healthcare professionals, and charitable institutions.
               </p>
             </div>
 
-            <div className="p-5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-2">
-              <CheckCircle2 className="w-5 h-5 text-[#2F7A1B]" />
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Corporate CSR</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+            <div className="p-6 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] space-y-2.5 shadow-xs hover:shadow-md transition-shadow">
+              <CheckCircle2 className="w-6 h-6 text-[#2F7A1B]" />
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Corporate CSR</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Explore corporate and philanthropic partnerships where legal and eligibility requirements are met.
               </p>
             </div>
 
-            <div className="p-5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-2">
-              <CheckCircle2 className="w-5 h-5 text-[#2F7A1B]" />
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Education & Detection</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+            <div className="p-6 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] space-y-2.5 shadow-xs hover:shadow-md transition-shadow">
+              <CheckCircle2 className="w-6 h-6 text-[#2F7A1B]" />
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Education & Detection</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Promote public awareness, early detection education, and timely medical consultation with qualified oncologists.
               </p>
             </div>
 
-            <div className="p-5 border border-[#D5DDE3] rounded-lg bg-[#F7F9FA] space-y-2">
-              <CheckCircle2 className="w-5 h-5 text-[#2F7A1B]" />
-              <h3 className="font-serif text-base font-bold text-[#1E2A33]">Integrity & Privacy</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+            <div className="p-6 border border-[#BAC9D6] rounded-xl bg-[#EAEFF5] space-y-2.5 shadow-xs hover:shadow-md transition-shadow">
+              <CheckCircle2 className="w-6 h-6 text-[#2F7A1B]" />
+              <h3 className="font-serif text-lg font-bold text-[#1E2A33]">Integrity & Privacy</h3>
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Maintain strict accountability, protect patient privacy, and use all philanthropic resources responsibly.
               </p>
             </div>
@@ -221,50 +221,50 @@ export default function AboutPage() {
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#004F8C] mb-3">
               Our Guiding Values
             </h2>
-            <p className="text-sm text-[#4F5B66]">
+            <p className="text-base text-[#4F5B66]">
               Every interaction with patients, donors, and partners is anchored in these six principles.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3]">
+            <div className="bg-[#EAEFF5] p-6 rounded-xl border border-[#BAC9D6] shadow-xs hover:shadow-md transition-shadow">
               <h3 className="font-serif text-lg font-bold text-[#004F8C] mb-2">Compassion</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Treating patients and their families with deep empathy, active listening, and respect at every step.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3]">
+            <div className="bg-[#EAEFF5] p-6 rounded-xl border border-[#BAC9D6] shadow-xs hover:shadow-md transition-shadow">
               <h3 className="font-serif text-lg font-bold text-[#004F8C] mb-2">Dignity</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Protecting privacy and avoiding stigma or discrimination. Every patient deserves respectful support.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3]">
+            <div className="bg-[#EAEFF5] p-6 rounded-xl border border-[#BAC9D6] shadow-xs hover:shadow-md transition-shadow">
               <h3 className="font-serif text-lg font-bold text-[#004F8C] mb-2">Integrity</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Handling all contributions, enquiries, and partner commitments responsibly and ethically.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3]">
+            <div className="bg-[#EAEFF5] p-6 rounded-xl border border-[#BAC9D6] shadow-xs hover:shadow-md transition-shadow">
               <h3 className="font-serif text-lg font-bold text-[#004F8C] mb-2">Transparency</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Communicating eligibility, limitations, and fund use clearly without vague or misleading claims.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3]">
+            <div className="bg-[#EAEFF5] p-6 rounded-xl border border-[#BAC9D6] shadow-xs hover:shadow-md transition-shadow">
               <h3 className="font-serif text-lg font-bold text-[#004F8C] mb-2">Collaboration</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Working closely with credible hospitals, doctors, and community partners to improve real reach.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-[#D5DDE3]">
+            <div className="bg-[#EAEFF5] p-6 rounded-xl border border-[#BAC9D6] shadow-xs hover:shadow-md transition-shadow">
               <h3 className="font-serif text-lg font-bold text-[#004F8C] mb-2">Hope</h3>
-              <p className="text-xs text-[#4F5B66] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed">
                 Encouraging patients and caregivers constructively without making unrealistic or false medical promises.
               </p>
             </div>

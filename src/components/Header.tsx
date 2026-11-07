@@ -40,29 +40,29 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-[#D5DDE3] shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
       {/* Brand & Action Bar */}
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between py-2.5 sm:py-3 md:py-4">
           {/* Brand Logo & Name */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 sm:gap-4 md:gap-5 py-1 text-decoration-none group flex-1 min-w-0 mr-2 sm:mr-4 lg:mr-8"
+            className="flex items-center gap-3 sm:gap-4 md:gap-5 py-1 text-decoration-none group flex-1 min-w-0 mr-2 sm:mr-4 lg:mr-8"
             aria-label="Cancer Care & Cure Foundation Home"
           >
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex-shrink-0 bg-white rounded-lg border border-[#D5DDE3] p-1 sm:p-1.5 flex items-center justify-center overflow-hidden shadow-xs">
+            <div className="relative w-16 h-16 sm:w-22 sm:h-22 md:w-26 md:h-26 lg:w-28 lg:h-28 flex-shrink-0 flex items-center justify-center">
               <Image
                 src="/images/logo.png"
                 alt="Cancer Care & Cure Foundation Logo"
-                width={80}
-                height={80}
+                width={120}
+                height={120}
                 priority
-                className="object-contain w-full h-full"
+                className="object-contain w-full h-full drop-shadow-xs"
               />
             </div>
             <div className="flex flex-col flex-1 min-w-0 justify-center">
-              <span className="font-serif font-bold text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-[36px] text-[#004F8C] leading-snug md:leading-none group-hover:text-[#0A2F52] transition-colors md:tracking-wide break-words md:whitespace-nowrap">
+              <span className="font-serif font-bold text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-[34px] text-[#004F8C] leading-snug md:leading-none group-hover:text-[#0A2F52] transition-colors md:tracking-wide break-words">
                 Cancer Care & Cure Foundation
               </span>
-              <span className="hidden sm:block text-xs md:text-sm lg:text-[14px] text-[#14788B] font-medium tracking-wide mt-0.5 md:mt-1.5 truncate">
+              <span className="hidden sm:block text-xs sm:text-sm lg:text-[15px] text-[#B45309] font-semibold italic tracking-wide mt-1 md:mt-1.5 truncate">
                 Together, We Give Hope. Together, We Save Lives.
               </span>
             </div>
@@ -72,14 +72,14 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-2.5 lg:gap-3 flex-shrink-0">
             <Link
               href="/patient-assistance"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs sm:text-sm font-semibold text-[#14788B] bg-[#E8F1F7] border border-[#14788B]/30 rounded hover:bg-[#14788B] hover:text-white transition-colors whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 text-xs sm:text-sm font-semibold text-[#14788B] bg-[#E8F1F7] border border-[#14788B]/30 rounded-lg hover:bg-[#14788B] hover:text-white transition-colors whitespace-nowrap shadow-2xs"
             >
               <HeartHandshake className="w-4 h-4" />
               <span>Get Patient Help</span>
             </Link>
             <Link
               href="/donate"
-              className="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-[#004F8C] rounded hover:bg-[#0A2F52] shadow-sm transition-colors whitespace-nowrap"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-[#004F8C] rounded-lg hover:bg-[#0A2F52] shadow-sm transition-colors whitespace-nowrap"
             >
               Donate Now
             </Link>
@@ -89,7 +89,7 @@ export default function Header() {
           <div className="flex md:hidden items-center gap-2 flex-shrink-0">
             <Link
               href="/donate"
-              className="px-3 py-1.5 text-xs font-semibold text-white bg-[#004F8C] rounded shadow-xs"
+              className="px-3.5 py-1.5 text-xs font-semibold text-white bg-[#004F8C] rounded-md shadow-xs"
             >
               Donate
             </Link>
@@ -108,10 +108,10 @@ export default function Header() {
 
       {/* Navigation Line (Home, About Us, etc.) */}
       <nav
-        className="hidden md:block border-t border-[#E8F1F7] bg-[#F8FAFC]/90 backdrop-blur-sm"
+        className="hidden md:block border-t border-[#E8F1F7] bg-[#F8FAFC]/95 backdrop-blur-sm"
         aria-label="Primary Navigation"
       >
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
+        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex items-center justify-between w-full py-2.5">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href;
@@ -119,9 +119,9 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm lg:text-[15px] font-medium transition-colors py-1.5 relative whitespace-nowrap ${
+                  className={`text-sm lg:text-base font-semibold transition-colors py-2 relative whitespace-nowrap ${
                     isActive
-                      ? "text-[#004F8C] font-semibold border-b-2 border-[#004F8C]"
+                      ? "text-[#004F8C] font-bold border-b-2 border-[#004F8C]"
                       : "text-[#1E2A33] hover:text-[#004F8C]"
                   }`}
                 >

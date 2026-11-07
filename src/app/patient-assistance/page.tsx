@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   HeartHandshake,
   ShieldAlert,
@@ -41,80 +42,106 @@ export default function PatientAssistancePage() {
       {/* How to Contact Us / Process */}
       <section className="py-14 sm:py-18 bg-white border-b border-[#D5DDE3]">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <div className="max-w-[760px] space-y-6">
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#004F8C]">
-              How to Seek Assistance
-            </h2>
-            <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed text-justify">
-              A cancer diagnosis can bring difficult medical, emotional, and financial questions. Cancer Care & Cure Foundation aims to develop a respectful, dignified process for people seeking information or financial aid.
-            </p>
-
-            <div className="space-y-4 pt-2">
-              <div className="flex items-start gap-4 p-5 bg-[#F7F9FA] border border-[#D5DDE3] rounded-lg">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm">
-                  1
-                </span>
-                <div className="space-y-1">
-                  <h3 className="font-serif font-bold text-base text-[#1E2A33]">
-                    Initial Contact
-                  </h3>
-                  <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
-                    Email us at{" "}
-                    <a href="mailto:cccf.cancer@gmail.com" className="font-semibold text-[#004F8C] underline">
-                      cccf.cancer@gmail.com
-                    </a>{" "}
-                    or call our helpline at{" "}
-                    <a href="tel:+919810414100" className="font-semibold text-[#004F8C] underline">
-                      +91 9810414100
-                    </a>
-                    .
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start mb-10">
+            <div className="lg:col-span-7 space-y-4">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#004F8C]">
+                How to Seek Assistance
+              </h2>
+              <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed text-justify">
+                A cancer diagnosis can bring difficult medical, emotional, and financial questions. Cancer Care & Cure Foundation aims to develop a respectful, dignified process for people seeking information or financial aid.
+              </p>
+              <p className="text-base text-[#4F5B66] leading-relaxed text-justify">
+                Our team assists patients and caregivers through transparent communication, providing direction on hospital desks, scheme entitlements, and required documentation before application review.
+              </p>
+            </div>
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl aspect-[4/3] bg-white group">
+                <Image
+                  src="/images/patient-assistance.jpg"
+                  alt="Compassionate patient support and medical navigation"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 480px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F52]/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3.5 left-4 right-4 text-white">
+                  <span className="text-[11px] uppercase tracking-wider font-bold text-[#E8F1F7] block mb-0.5">
+                    Dignity & Support
+                  </span>
+                  <p className="font-serif text-sm sm:text-base font-bold leading-snug">
+                    Standing beside patients and families every step of the journey
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div className="flex items-start gap-4 p-5 bg-[#F7F9FA] border border-[#D5DDE3] rounded-lg">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm">
-                  2
-                </span>
-                <div className="space-y-1">
-                  <h3 className="font-serif font-bold text-base text-[#1E2A33]">
-                    Briefly Explain Your Situation
-                  </h3>
-                  <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
-                    Briefly state the type of support, hospital navigation, or financial information you are seeking.{" "}
-                    <strong className="text-[#A32A2A]">
-                      Do not send medical files or bank details in your initial enquiry.
-                    </strong>
-                  </p>
-                </div>
+          <div className="space-y-4 pt-2 max-w-[880px]">
+            <div className="flex items-start gap-4 p-5 sm:p-6 bg-[#EAEFF5] border border-[#BAC9D6] rounded-xl shadow-xs hover:shadow-md transition-shadow">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm shadow-2xs">
+                1
+              </span>
+              <div className="space-y-1">
+                <h3 className="font-serif font-bold text-base sm:text-lg text-[#1E2A33]">
+                  Initial Contact
+                </h3>
+                <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
+                  Email us at{" "}
+                  <a href="mailto:cccf.cancer@gmail.com" className="font-semibold text-[#004F8C] underline">
+                    cccf.cancer@gmail.com
+                  </a>{" "}
+                  or call our helpline at{" "}
+                  <a href="tel:+919810414100" className="font-semibold text-[#004F8C] underline">
+                    +91 9810414100
+                  </a>
+                  .
+                </p>
               </div>
+            </div>
 
-              <div className="flex items-start gap-4 p-5 bg-[#F7F9FA] border border-[#D5DDE3] rounded-lg">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm">
-                  3
-                </span>
-                <div className="space-y-1">
-                  <h3 className="font-serif font-bold text-base text-[#1E2A33]">
-                    Eligibility & Documentation Guidance
-                  </h3>
-                  <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
-                    If an appropriate support programme is currently active, our team will explain its specific eligibility rules, required documentation (e.g. income certificate, hospital estimate), and timelines.
-                  </p>
-                </div>
+            <div className="flex items-start gap-4 p-5 sm:p-6 bg-[#EAEFF5] border border-[#BAC9D6] rounded-xl shadow-xs hover:shadow-md transition-shadow">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm shadow-2xs">
+                2
+              </span>
+              <div className="space-y-1">
+                <h3 className="font-serif font-bold text-base sm:text-lg text-[#1E2A33]">
+                  Briefly Explain Your Situation
+                </h3>
+                <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
+                  Briefly state the type of support, hospital navigation, or financial information you are seeking.{" "}
+                  <strong className="text-[#A32A2A]">
+                    Do not send medical files or bank details in your initial enquiry.
+                  </strong>
+                </p>
               </div>
+            </div>
 
-              <div className="flex items-start gap-4 p-5 bg-[#F7F9FA] border border-[#D5DDE3] rounded-lg">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm">
-                  4
-                </span>
-                <div className="space-y-1">
-                  <h3 className="font-serif font-bold text-base text-[#1E2A33]">
-                    Transparent Review
-                  </h3>
-                  <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
-                    Requests are reviewed fairly based on verified need, approved programme criteria, available funds, and compliance with charitable trust regulations.
-                  </p>
-                </div>
+            <div className="flex items-start gap-4 p-5 sm:p-6 bg-[#EAEFF5] border border-[#BAC9D6] rounded-xl shadow-xs hover:shadow-md transition-shadow">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm shadow-2xs">
+                3
+              </span>
+              <div className="space-y-1">
+                <h3 className="font-serif font-bold text-base sm:text-lg text-[#1E2A33]">
+                  Eligibility & Documentation Guidance
+                </h3>
+                <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
+                  If an appropriate support programme is currently active, our team will explain its specific eligibility rules, required documentation (e.g. income certificate, hospital estimate), and timelines.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-5 sm:p-6 bg-[#EAEFF5] border border-[#BAC9D6] rounded-xl shadow-xs hover:shadow-md transition-shadow">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#004F8C] text-white flex items-center justify-center font-bold text-sm shadow-2xs">
+                4
+              </span>
+              <div className="space-y-1">
+                <h3 className="font-serif font-bold text-base sm:text-lg text-[#1E2A33]">
+                  Transparent Review
+                </h3>
+                <p className="text-sm sm:text-base text-[#4F5B66] leading-relaxed text-justify">
+                  Requests are reviewed fairly based on verified need, approved programme criteria, available funds, and compliance with charitable trust regulations.
+                </p>
               </div>
             </div>
           </div>
