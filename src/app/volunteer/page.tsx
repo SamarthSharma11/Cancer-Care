@@ -44,16 +44,20 @@ export default function VolunteerPage() {
             {/* Left Column: Volunteer Areas & Guardrails */}
             <div className="lg:col-span-5 space-y-8">
               {/* Volunteer Hero Image */}
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white mb-6">
+              <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-lg bg-[#EAEFF5] group">
                 <Image
                   src="/images/volunteer.jpg"
                   alt="Volunteers supporting Cancer Care & Cure Foundation"
-                  fill
+                  width={1024}
+                  height={768}
                   priority
-                  className="object-cover object-center"
+                  className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 100vw, 480px"
                 />
               </div>
+              <p className="font-serif text-sm text-[#4F5B66] italic text-center mt-2">
+                Community &amp; Compassion — dedicated volunteers bringing hope to patients
+              </p>
 
               <div>
                 <h2 className="font-serif text-2xl font-bold text-[#0A2F52] mb-3">

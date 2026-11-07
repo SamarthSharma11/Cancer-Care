@@ -13,13 +13,13 @@ export default function Footer() {
           {/* Column 1: Organization & Identity */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-14 h-14 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 shadow-xs">
+              <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-xs overflow-hidden">
                 <Image
                   src="/images/logo.png"
                   alt="Cancer Care & Cure Foundation"
                   width={56}
                   height={56}
-                  className="object-contain"
+                  className="object-contain w-full h-full"
                 />
               </div>
               <div>

@@ -48,14 +48,14 @@ export default function Header() {
             className="flex items-center gap-3 sm:gap-4 md:gap-5 py-1 text-decoration-none group flex-1 min-w-0 mr-2 sm:mr-4 lg:mr-8"
             aria-label="Cancer Care & Cure Foundation Home"
           >
-            <div className="relative w-16 h-16 sm:w-22 sm:h-22 md:w-26 md:h-26 lg:w-28 lg:h-28 flex-shrink-0 flex items-center justify-center">
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex-shrink-0 flex items-center justify-center">
               <Image
                 src="/images/logo.png"
                 alt="Cancer Care & Cure Foundation Logo"
-                width={120}
-                height={120}
+                width={112}
+                height={112}
                 priority
-                className="object-contain w-full h-full drop-shadow-xs"
+                className="object-contain w-full h-full"
               />
             </div>
             <div className="flex flex-col flex-1 min-w-0 justify-center">

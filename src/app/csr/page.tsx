@@ -55,17 +55,21 @@ export default function CSRPage() {
                 Cancer creates catastrophic expenditure for low-income households. Through collaborative CSR funding, corporations can make direct, measurable contributions toward lifesaving treatment interventions, diagnostic access, nutritional stability, and preventive health literacy.
               </p>
             </div>
-            <div className="lg:col-span-5 relative">
-              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white">
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-[#EAEFF5] group">
                 <Image
                   src="/images/csr-partnership.jpg"
                   alt="Corporate CSR Partnerships for Cancer Care"
-                  fill
+                  width={446}
+                  height={250}
                   priority
-                  className="object-cover object-center"
+                  className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 100vw, 480px"
                 />
               </div>
+              <p className="font-serif text-sm text-[#4F5B66] italic text-center mt-3">
+                Schedule VII Healthcare &amp; Preventive Oncology Partnerships
+              </p>
             </div>
           </div>
         </div>

@@ -54,17 +54,21 @@ export default function PatientAssistancePage() {
                 Our team assists patients and caregivers through transparent communication, providing direction on hospital desks, scheme entitlements, and required documentation before application review.
               </p>
             </div>
-            <div className="lg:col-span-5 relative">
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white">
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-[#EAEFF5] group">
                 <Image
                   src="/images/patient-assistance.jpg"
                   alt="Compassionate patient support and medical navigation"
-                  fill
+                  width={515}
+                  height={388}
                   priority
-                  className="object-cover object-center"
+                  className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 100vw, 480px"
                 />
               </div>
+              <p className="font-serif text-sm text-[#4F5B66] italic text-center mt-3">
+                Dignity &amp; Support — standing beside patients and families every step of the journey
+              </p>
             </div>
           </div>
 
