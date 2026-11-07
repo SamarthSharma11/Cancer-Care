@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { sendVolunteerEmail } from "@/lib/email";
 
 export async function POST(request: Request) {
   try {
@@ -12,19 +13,20 @@ export async function POST(request: Request) {
       );
     }
 
-    console.log("[API/Volunteer] Received new application:", {
+    // Send volunteer application email to cccf.cancer@gmail.com
+    await sendVolunteerEmail({
       fullName,
       email,
       phone,
       city,
-      role,
-      availability,
-      timestamp: new Date().toISOString(),
+      role: role || "awareness",
+      skills,
+      availability: availability || "weekends",
     });
 
     return NextResponse.json({
       success: true,
-      message: "Application submitted successfully",
+      message: "Application submitted successfully and forwarded to cccf.cancer@gmail.com",
     });
   } catch (error) {
     console.error("[API/Volunteer] Error:", error);

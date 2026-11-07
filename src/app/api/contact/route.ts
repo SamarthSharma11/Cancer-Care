@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { sendContactEmail } from "@/lib/email";
 
 export async function POST(request: Request) {
   try {
@@ -12,23 +13,18 @@ export async function POST(request: Request) {
       );
     }
 
-    // In production with Supabase configured:
-    // 1. Check rate limit
-    // 2. Insert into contact_submissions table
-    // 3. Queue email_events for staff notification
-    // For local development / preview:
-    console.log("[API/Contact] Received new submission:", {
+    // Send email notification to cccf.cancer@gmail.com
+    await sendContactEmail({
       fullName,
       email,
       phone,
-      enquiryType,
-      messageLength: message.length,
-      timestamp: new Date().toISOString(),
+      enquiryType: enquiryType || "general",
+      message,
     });
 
     return NextResponse.json({
       success: true,
-      message: "Enquiry submitted successfully",
+      message: "Enquiry submitted successfully and forwarded to cccf.cancer@gmail.com",
     });
   } catch (error) {
     console.error("[API/Contact] Error:", error);
