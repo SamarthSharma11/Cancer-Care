@@ -27,27 +27,40 @@ function getTransporter() {
     process.env.EMAIL_USER ||
     RECIPIENT_EMAIL;
 
-  const pass =
+  const rawPass =
     process.env.GMAIL_APP_PASSWORD ||
     process.env.SMTP_PASS ||
     process.env.EMAIL_PASS ||
     process.env.EMAIL_SERVER_PASSWORD;
 
-  if (!pass) {
+  if (!rawPass) {
     return null;
   }
 
-  // If host is explicitly provided or defaults to Gmail
-  const host = process.env.SMTP_HOST || "smtp.gmail.com";
-  const port = Number(process.env.SMTP_PORT) || 465;
-  const secure = process.env.SMTP_SECURE !== "false"; // true for port 465
+  // Remove any whitespace (Google displays app passwords in 4x4 blocks like "abcd efgh ijkl mnop")
+  const pass = rawPass.replace(/\s+/g, "").trim();
 
+  // If a custom SMTP server is specified, use host and port
+  if (process.env.SMTP_HOST) {
+    const host = process.env.SMTP_HOST;
+    const port = Number(process.env.SMTP_PORT) || 465;
+    const secure = process.env.SMTP_SECURE !== "false";
+    return nodemailer.createTransport({
+      host,
+      port,
+      secure,
+      auth: {
+        user: user.trim(),
+        pass,
+      },
+    });
+  }
+
+  // Built-in Gmail transport (handles SSL, STARTTLS, and Google's exact requirements)
   return nodemailer.createTransport({
-    host,
-    port,
-    secure,
+    service: "gmail",
     auth: {
-      user,
+      user: user.trim(),
       pass,
     },
   });

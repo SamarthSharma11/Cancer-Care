@@ -28,8 +28,9 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     console.error("[API/Contact] Error:", error);
+    const message = error instanceof Error ? error.message : "Failed to process enquiry";
     return NextResponse.json(
-      { error: "Internal server error" },
+      { error: message },
       { status: 500 }
     );
   }
