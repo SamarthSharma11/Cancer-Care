@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   HandHeart,
   Compass,
@@ -9,6 +10,7 @@ import {
   ShieldAlert,
   ArrowRight,
   Info,
+  Camera,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -205,6 +207,176 @@ export default function ProgrammesPage() {
                 The foundation will not promise medical outcomes or replace advice from qualified clinicians.
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Media & Events Gallery Section */}
+      <section className="py-16 sm:py-20 bg-white border-b border-[#D5DDE3]" id="media">
+        <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-[760px] mx-auto mb-12 sm:mb-14">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F1F7] text-[#004F8C] text-xs font-semibold tracking-wider uppercase mb-3">
+              <Camera className="w-3.5 h-3.5 text-[#14788B]" />
+              Media &amp; Events Gallery
+            </span>
+            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004F8C] mb-3">
+              Our Work in Action
+            </h2>
+            <p className="text-base text-[#4F5B66] leading-relaxed">
+              Moments from our community awareness rallies, public health addresses, and patient support initiatives across India.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 items-stretch">
+            {/* Photo 1: Community Rally */}
+            <div className="bg-[#EAEFF5] border-2 border-[#BAC9D6] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div className="rounded-xl overflow-hidden bg-white border border-[#BAC9D6] flex items-center justify-center">
+                <Image
+                  src="/images/media/media-5.jpg"
+                  alt="Cancer Care & Cure Foundation - Community Cancer Awareness Rally"
+                  width={1024}
+                  height={768}
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
+                />
+              </div>
+              <div className="pt-3.5 px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#14788B] block mb-1">
+                  Community Outreach
+                </span>
+                <h3 className="font-serif font-bold text-base text-[#1E2A33] leading-snug">
+                  Cancer Awareness &amp; Early Detection Rally
+                </h3>
+                <p className="text-xs text-[#4F5B66] mt-1.5 leading-relaxed">
+                  Volunteers and youth marching to spread cancer prevention literacy and counter stigma in public communities.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 2: Award & Recognition */}
+            <div className="bg-[#EAEFF5] border-2 border-[#BAC9D6] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div className="rounded-xl overflow-hidden bg-white border border-[#BAC9D6] flex items-center justify-center">
+                <Image
+                  src="/images/media/media-4.jpg"
+                  alt="Cancer Care & Cure Foundation - Support and Recognition Event"
+                  width={1024}
+                  height={768}
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
+                />
+              </div>
+              <div className="pt-3.5 px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#2F7A1B] block mb-1">
+                  Patient Support
+                </span>
+                <h3 className="font-serif font-bold text-base text-[#1E2A33] leading-snug">
+                  Support &amp; Community Recognition Ceremony
+                </h3>
+                <p className="text-xs text-[#4F5B66] mt-1.5 leading-relaxed">
+                  Honoring compassionate caregivers and standing beside families fighting cancer with moral and logistical aid.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 3: Outdoor Stage Address */}
+            <div className="bg-[#EAEFF5] border-2 border-[#BAC9D6] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div className="rounded-xl overflow-hidden bg-white border border-[#BAC9D6] flex items-center justify-center">
+                <Image
+                  src="/images/media/media-3.jpg"
+                  alt="Founder Sushil Sharma Keynote on Cancer Care and Support"
+                  width={1024}
+                  height={768}
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
+                />
+              </div>
+              <div className="pt-3.5 px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#004F8C] block mb-1">
+                  Foundation Keynote
+                </span>
+                <h3 className="font-serif font-bold text-base text-[#1E2A33] leading-snug">
+                  Public Health Address &amp; Survivor Message
+                </h3>
+                <p className="text-xs text-[#4F5B66] mt-1.5 leading-relaxed">
+                  Founder Sushil Sharma sharing his personal cancer journey and advocating for equitable treatment access across India.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 4: Foundation Event Keynote */}
+            <div className="bg-[#EAEFF5] border-2 border-[#BAC9D6] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div className="rounded-xl overflow-hidden bg-white border border-[#BAC9D6] flex items-center justify-center">
+                <Image
+                  src="/images/media/media-6.jpg"
+                  alt="Sushil Sharma addressing public oncology symposium"
+                  width={1024}
+                  height={768}
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
+                />
+              </div>
+              <div className="pt-3.5 px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#004F8C] block mb-1">
+                  Advocacy
+                </span>
+                <h3 className="font-serif font-bold text-base text-[#1E2A33] leading-snug">
+                  Strengthening Healthcare Networks
+                </h3>
+                <p className="text-xs text-[#4F5B66] mt-1.5 leading-relaxed">
+                  Calling upon civil society, CSR leaders, and oncology institutions to bridge the financial divide in cancer care.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 5: Podium Address */}
+            <div className="bg-[#EAEFF5] border-2 border-[#BAC9D6] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div className="rounded-xl overflow-hidden bg-white border border-[#BAC9D6] flex items-center justify-center">
+                <Image
+                  src="/images/media/media-1.jpg"
+                  alt="Founder Sushil Sharma at the CCCF podium"
+                  width={1024}
+                  height={678}
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
+                />
+              </div>
+              <div className="pt-3.5 px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#B45309] block mb-1">
+                  Leadership Note
+                </span>
+                <h3 className="font-serif font-bold text-base text-[#1E2A33] leading-snug">
+                  Support Cancer Patients, Spread Hope
+                </h3>
+                <p className="text-xs text-[#4F5B66] mt-1.5 leading-relaxed">
+                  Addressing medical caregivers, volunteers, and stakeholders on upholding dignity for vulnerable patients.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 6: Core Mission Banner */}
+            <div className="bg-[#EAEFF5] border-2 border-[#BAC9D6] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div className="rounded-xl overflow-hidden bg-white border border-[#BAC9D6] flex items-center justify-center">
+                <Image
+                  src="/images/media/media-2.jpg"
+                  alt="Cancer Care & Cure Foundation Official Initiative Banner"
+                  width={1024}
+                  height={512}
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
+                />
+              </div>
+              <div className="pt-3.5 px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#004F8C] block mb-1">
+                  Mission Statement
+                </span>
+                <h3 className="font-serif font-bold text-base text-[#1E2A33] leading-snug">
+                  Because Every Life Matters
+                </h3>
+                <p className="text-xs text-[#4F5B66] mt-1.5 leading-relaxed">
+                  Our core pillars: Moral Support, Cancer Diagnostics &amp; Medicines, Quality Care Access, and Renewed Hope.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
