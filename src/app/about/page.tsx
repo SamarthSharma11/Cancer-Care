@@ -39,9 +39,9 @@ export default function AboutPage() {
       </section>
 
       {/* Official Foundation Banner */}
-      <section className="py-8 sm:py-12 bg-white border-b border-[#D5DDE3]">
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-[#EAEFF5] group">
+      <section className="py-8 sm:py-10 bg-white border-b border-[#D5DDE3]">
+        <div className="max-w-[780px] mx-auto px-4 sm:px-6">
+          <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-lg bg-[#EAEFF5] group">
             <Image
               src="/images/about-banner.jpg"
               alt="Cancer Care & Cure Foundation - Supporting Financially Disadvantaged Cancer Patients Across India"
@@ -49,7 +49,7 @@ export default function AboutPage() {
               height={512}
               priority
               className="w-full h-auto block group-hover:scale-[1.01] transition-transform duration-500"
-              sizes="(max-width: 1120px) 100vw, 1120px"
+              sizes="(max-width: 780px) 100vw, 780px"
             />
           </div>
         </div>
