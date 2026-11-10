@@ -24,25 +24,23 @@ export default function AboutPage() {
       {/* Header Banner */}
       <section className="bg-[#E8F1F7] border-b border-[#C5D8E6] py-10 sm:py-14 lg:py-16">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Header Text */}
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-7">
               <span className="text-xs uppercase font-bold tracking-wider text-[#14788B] mb-2.5 block">
                 About The Foundation
               </span>
-              <h1 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#004F8C] mb-4 leading-[1.2]">
+              <h1 className="font-serif text-2xl sm:text-3xl lg:text-[38px] xl:text-[40px] font-bold text-[#004F8C] mb-4 leading-tight">
                 Building a Responsible,<br />
-                Compassionate<br />
-                Network of Care
+                <span className="whitespace-normal sm:whitespace-nowrap">Compassionate Network of Care</span>
               </h1>
-              <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed">
-                Cancer Care &amp; Cure Foundation is being developed to help people affected by cancer face their journey with<br className="hidden sm:inline" />
-                greater support, dignity, and hope.
+              <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed max-w-[620px]">
+                Cancer Care &amp; Cure Foundation is being developed to help people affected by cancer face their journey with greater support, dignity, and hope.
               </p>
             </div>
 
-            {/* Banner Image in empty space (Full picture, no cropping) */}
-            <div className="lg:col-span-6">
+            {/* Banner Image (Full picture, no cropping) */}
+            <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white group">
                 <Image
                   src="/images/about-banner.jpg"
@@ -51,7 +49,7 @@ export default function AboutPage() {
                   height={512}
                   priority
                   className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-500"
-                  sizes="(max-width: 1024px) 100vw, 540px"
+                  sizes="(max-width: 1024px) 100vw, 480px"
                 />
               </div>
             </div>
