@@ -22,35 +22,39 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Header Banner */}
-      <section className="bg-[#E8F1F7] border-b border-[#C5D8E6] py-12 sm:py-16">
+      <section className="bg-[#E8F1F7] border-b border-[#C5D8E6] py-10 sm:py-14 lg:py-16">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
-          <div className="max-w-[760px]">
-            <span className="text-xs uppercase font-bold tracking-wider text-[#14788B] mb-2 block">
-              About The Foundation
-            </span>
-            <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#004F8C] mb-4">
-              Building a Responsible, Compassionate Network of Care
-            </h1>
-            <p className="text-base text-[#1E2A33] leading-relaxed">
-              Cancer Care & Cure Foundation is being developed to help people affected by cancer face their journey with greater support, dignity, and hope.
-            </p>
-          </div>
-        </div>
-      </section>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            {/* Header Text */}
+            <div className="lg:col-span-6">
+              <span className="text-xs uppercase font-bold tracking-wider text-[#14788B] mb-2.5 block">
+                About The Foundation
+              </span>
+              <h1 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#004F8C] mb-4 leading-[1.2]">
+                Building a Responsible,<br />
+                Compassionate<br />
+                Network of Care
+              </h1>
+              <p className="text-base sm:text-lg text-[#1E2A33] leading-relaxed">
+                Cancer Care &amp; Cure Foundation is being developed to help people affected by cancer face their journey with<br className="hidden sm:inline" />
+                greater support, dignity, and hope.
+              </p>
+            </div>
 
-      {/* Official Foundation Banner */}
-      <section className="py-8 sm:py-10 bg-white border-b border-[#D5DDE3]">
-        <div className="max-w-[780px] mx-auto px-4 sm:px-6">
-          <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-lg bg-[#EAEFF5] group">
-            <Image
-              src="/images/about-banner.jpg"
-              alt="Cancer Care & Cure Foundation - Supporting Financially Disadvantaged Cancer Patients Across India"
-              width={1024}
-              height={512}
-              priority
-              className="w-full h-auto block group-hover:scale-[1.01] transition-transform duration-500"
-              sizes="(max-width: 780px) 100vw, 780px"
-            />
+            {/* Banner Image in empty space (Full picture, no cropping) */}
+            <div className="lg:col-span-6">
+              <div className="rounded-2xl overflow-hidden border-2 border-[#BAC9D6] shadow-xl bg-white group">
+                <Image
+                  src="/images/about-banner.jpg"
+                  alt="Cancer Care & Cure Foundation - Supporting Financially Disadvantaged Cancer Patients Across India"
+                  width={1024}
+                  height={512}
+                  priority
+                  className="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 540px"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
